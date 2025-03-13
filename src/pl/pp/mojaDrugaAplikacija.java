@@ -6,30 +6,18 @@ public class mojaDrugaAplikacija {
      //to jest komentarz liniowy
 
      double x = 10; // Utworzenie zmiennej typu double i przypisanie jej wartości 10
-     double y = 2;
 
      Scanner scanner = new Scanner(System.in);
 
-     var result = x + y;
-     System.out.println("x + y = " + result);
+     var result = x + x;
+     System.out.println("x + x = " + result);
 
-     result = x - y;
-     System.out.println("x - y = " + result);
+     result = 2 * x;
+     System.out.println("2 * x = " + result);
 
-     result = x * y;
-     System.out.println("x * y = " + result);
+     result = x * x;
+     System.out.println("x^2 = " + result);
 
-     result = x / y;
-     System.out.println("x / y = " + result);
-
-     result = x % y;
-     System.out.println("x % y = " + result);
-
-     System.out.println("Wpisz dwie liczby rozdzielone klawiszem Enter:");
-     double first = scanner.nextDouble(); // Prośba o wpisanie wartości typu double
-     double second = scanner.nextDouble();
-
-     System.out.println("x + y = " + (first + second));
 
      System.out.println("Prosze podaj swoje imie");
      String imie = scanner.nextLine();
@@ -37,8 +25,13 @@ public class mojaDrugaAplikacija {
      System.out.println("Prosze podaj swoje nazwisko");
      String surname = scanner.nextLine();
 
+     System.out.println("Wpisz ille masz lat:");
+     double first = scanner.nextDouble();
+
+     System.out.println("Oto jak długo żyłeś w sekundach " + (first * 365 * 24 * 60 * 60));
+
      scanner.close();
 
-     System.out.println("Witaj " + imie + " " + surname );
+     System.out.println("Witaj " + imie + " " + surname + ", masz " + first + " lat, co daje około " + (first * 365 * 24 * 60 * 60) + " sekund życia.");
  }
 }
